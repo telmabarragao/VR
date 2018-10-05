@@ -663,12 +663,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 8116003b-d045-4592-a27a-2736d686edd5
+  cloudProjectId: 25fe31c6-1192-4567-9117-aaa086c7449a
   projectName: VR Project
-  organizationId: telmabarragao
+  organizationId: joaobernardoaa96
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

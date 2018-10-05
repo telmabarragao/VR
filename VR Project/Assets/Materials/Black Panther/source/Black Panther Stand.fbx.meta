@@ -1,0 +1,939 @@
+fileFormatVersion: 2
+guid: 56fee4a9c8512dd46808bc04a28da86a
+timeCreated: 1538747389
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AA Hair
+    100002: //RootNode
+    100004: Bodysuit
+    100006: BoneRoot
+    100008: CC_Base_Body
+    100010: CC_Base_Eye
+    100012: CC_Base_Teeth
+    100014: CC_Base_Tongue
+    100016: Claw
+    100018: Claw(0)
+    100020: Claw(1)
+    100022: Claw(2)
+    100024: Claw(3)
+    100026: Claw(4)
+    100028: Claw(5)
+    100030: Claw(6)
+    100032: Claw(7)
+    100034: Claw(8)
+    100036: FacialBone
+    100038: gant
+    100040: Group15716
+    100042: Group15716 1
+    100044: Group15716 10
+    100046: Group15716 11
+    100048: Group15716 12
+    100050: Group15716 13
+    100052: Group15716 14
+    100054: Group15716 15
+    100056: Group15716 16
+    100058: Group15716 17
+    100060: Group15716 18
+    100062: Group15716 19
+    100064: Group15716 2
+    100066: Group15716 3
+    100068: Group15716 4
+    100070: Group15716 5
+    100072: Group15716 6
+    100074: Group15716 7
+    100076: Group15716 8
+    100078: Group15716 9
+    100080: Group15732
+    100082: Group15732 1
+    100084: Group15732 10
+    100086: Group15732 11
+    100088: Group15732 12
+    100090: Group15732 13
+    100092: Group15732 14
+    100094: Group15732 15
+    100096: Group15732 16
+    100098: Group15732 17
+    100100: Group15732 18
+    100102: Group15732 19
+    100104: Group15732 2
+    100106: Group15732 3
+    100108: Group15732 4
+    100110: Group15732 5
+    100112: Group15732 6
+    100114: Group15732 7
+    100116: Group15732 8
+    100118: Group15732 9
+    100120: Group17261
+    100122: Group17261 1
+    100124: Group17261 10
+    100126: Group17261 11
+    100128: Group17261 12
+    100130: Group17261 13
+    100132: Group17261 14
+    100134: Group17261 15
+    100136: Group17261 16
+    100138: Group17261 17
+    100140: Group17261 18
+    100142: Group17261 19
+    100144: Group17261 2
+    100146: Group17261 3
+    100148: Group17261 4
+    100150: Group17261 5
+    100152: Group17261 6
+    100154: Group17261 7
+    100156: Group17261 8
+    100158: Group17261 9
+    100160: Group36891
+    100162: Group36891 1
+    100164: Group36891 10
+    100166: Group36891 11
+    100168: Group36891 12
+    100170: Group36891 13
+    100172: Group36891 14
+    100174: Group36891 15
+    100176: Group36891 16
+    100178: Group36891 17
+    100180: Group36891 18
+    100182: Group36891 19
+    100184: Group36891 2
+    100186: Group36891 3
+    100188: Group36891 4
+    100190: Group36891 5
+    100192: Group36891 6
+    100194: Group36891 7
+    100196: Group36891 8
+    100198: Group36891 9
+    100200: Group42355
+    100202: Group42355 1
+    100204: Group42355 10
+    100206: Group42355 11
+    100208: Group42355 12
+    100210: Group42355 13
+    100212: Group42355 14
+    100214: Group42355 15
+    100216: Group42355 16
+    100218: Group42355 17
+    100220: Group42355 18
+    100222: Group42355 19
+    100224: Group42355 2
+    100226: Group42355 3
+    100228: Group42355 4
+    100230: Group42355 5
+    100232: Group42355 6
+    100234: Group42355 7
+    100236: Group42355 8
+    100238: Group42355 9
+    100240: Group43081
+    100242: Group43081 1
+    100244: Group51270
+    100246: Group51270 1
+    100248: Group51270 10
+    100250: Group51270 11
+    100252: Group51270 12
+    100254: Group51270 13
+    100256: Group51270 14
+    100258: Group51270 15
+    100260: Group51270 16
+    100262: Group51270 17
+    100264: Group51270 18
+    100266: Group51270 19
+    100268: Group51270 2
+    100270: Group51270 3
+    100272: Group51270 4
+    100274: Group51270 5
+    100276: Group51270 6
+    100278: Group51270 7
+    100280: Group51270 8
+    100282: Group51270 9
+    100284: Group65238
+    100286: Group65238 1
+    100288: Group65238 10
+    100290: Group65238 11
+    100292: Group65238 12
+    100294: Group65238 13
+    100296: Group65238 14
+    100298: Group65238 15
+    100300: Group65238 16
+    100302: Group65238 17
+    100304: Group65238 18
+    100306: Group65238 19
+    100308: Group65238 2
+    100310: Group65238 3
+    100312: Group65238 4
+    100314: Group65238 5
+    100316: Group65238 6
+    100318: Group65238 7
+    100320: Group65238 8
+    100322: Group65238 9
+    100324: Group6974
+    100326: Group6974 1
+    100328: Group6974 10
+    100330: Group6974 11
+    100332: Group6974 12
+    100334: Group6974 13
+    100336: Group6974 14
+    100338: Group6974 15
+    100340: Group6974 16
+    100342: Group6974 17
+    100344: Group6974 18
+    100346: Group6974 19
+    100348: Group6974 2
+    100350: Group6974 3
+    100352: Group6974 4
+    100354: Group6974 5
+    100356: Group6974 6
+    100358: Group6974 7
+    100360: Group6974 8
+    100362: Group6974 9
+    100364: Head
+    100366: HeadNub
+    100368: Hip
+    100370: JawRoot
+    100372: L_Abdominal
+    100374: L_AbdominalNub
+    100376: L_Breast
+    100378: L_BreastNub
+    100380: L_Calf
+    100382: L_CalfTwist01
+    100384: L_CalfTwist02
+    100386: L_Clavicle
+    100388: L_Elbow
+    100390: L_Eye
+    100392: L_EyeRoot
+    100394: L_Finger00
+    100396: L_Finger01
+    100398: L_Finger02
+    100400: L_Finger0Nub
+    100402: L_Finger10
+    100404: L_Finger11
+    100406: L_Finger12
+    100408: L_Finger1Nub
+    100410: L_Finger20
+    100412: L_Finger21
+    100414: L_Finger22
+    100416: L_Finger2Nub
+    100418: L_Finger30
+    100420: L_Finger31
+    100422: L_Finger32
+    100424: L_Finger3Nub
+    100426: L_Finger40
+    100428: L_Finger41
+    100430: L_Finger42
+    100432: L_Finger4Nub
+    100434: L_Foot
+    100436: L_Forearm
+    100438: L_ForearmTwist01
+    100440: L_ForearmTwist02
+    100442: L_Hand
+    100444: L_Hip0
+    100446: L_Hip0Nub
+    100448: L_Knee
+    100450: L_Ribs
+    100452: L_RibsNub
+    100454: L_RibsTwist
+    100456: L_Thigh
+    100458: L_ThighTwist01
+    100460: L_ThighTwist02
+    100462: L_Toe00
+    100464: L_Toe00Nub
+    100466: L_Toe10
+    100468: L_Toe10Nub
+    100470: L_Toe20
+    100472: L_Toe20Nub
+    100474: L_Toe30
+    100476: L_Toe30Nub
+    100478: L_Toe40
+    100480: L_Toe40Nub
+    100482: L_ToeBase
+    100484: L_ToeBaseShareBone
+    100486: L_Upperarm
+    100488: L_UpperarmTwist01
+    100490: L_UpperarmTwist02
+    100492: Mask
+    100494: NeckTwist01
+    100496: NeckTwist02
+    100498: Pelvis
+    100500: Pivot
+    100502: Pivot 1
+    100504: Pivot 2
+    100506: Pivot 3
+    100508: Pivot 4
+    100510: Pivot 5
+    100512: Pivot 6
+    100514: Pivot 7
+    100516: Pivot 8
+    100518: Pivot 9
+    100520: R_Abdominal
+    100522: R_AbdominalNub
+    100524: R_Breast
+    100526: R_BreastNub
+    100528: R_Calf
+    100530: R_CalfTwist01
+    100532: R_CalfTwist02
+    100534: R_Clavicle
+    100536: R_Elbow
+    100538: R_Eye
+    100540: R_EyeRoot
+    100542: R_Finger00
+    100544: R_Finger01
+    100546: R_Finger02
+    100548: R_Finger0Nub
+    100550: R_Finger10
+    100552: R_Finger11
+    100554: R_Finger12
+    100556: R_Finger1Nub
+    100558: R_Finger20
+    100560: R_Finger21
+    100562: R_Finger22
+    100564: R_Finger2Nub
+    100566: R_Finger30
+    100568: R_Finger31
+    100570: R_Finger32
+    100572: R_Finger3Nub
+    100574: R_Finger40
+    100576: R_Finger41
+    100578: R_Finger42
+    100580: R_Finger4Nub
+    100582: R_Foot
+    100584: R_Forearm
+    100586: R_ForearmTwist01
+    100588: R_ForearmTwist02
+    100590: R_Hand
+    100592: R_Hip0
+    100594: R_Hip0Nub
+    100596: R_Knee
+    100598: R_Ribs
+    100600: R_RibsNub
+    100602: R_RibsTwist
+    100604: R_Thigh
+    100606: R_ThighTwist01
+    100608: R_ThighTwist02
+    100610: R_Toe00
+    100612: R_Toe00Nub
+    100614: R_Toe10
+    100616: R_Toe10Nub
+    100618: R_Toe20
+    100620: R_Toe20Nub
+    100622: R_Toe30
+    100624: R_Toe30Nub
+    100626: R_Toe40
+    100628: R_Toe40Nub
+    100630: R_ToeBase
+    100632: R_ToeBaseShareBone
+    100634: R_Upperarm
+    100636: R_UpperarmTwist01
+    100638: R_UpperarmTwist02
+    100640: Spine01
+    100642: Spine02
+    100644: Teeth01
+    100646: Teeth02
+    100648: Tongue01
+    100650: Tongue02
+    100652: Tongue03
+    100654: Tongue03Nub
+    100656: UpperJaw
+    100658: Waist
+    400000: AA Hair
+    400002: //RootNode
+    400004: Bodysuit
+    400006: BoneRoot
+    400008: CC_Base_Body
+    400010: CC_Base_Eye
+    400012: CC_Base_Teeth
+    400014: CC_Base_Tongue
+    400016: Claw
+    400018: Claw(0)
+    400020: Claw(1)
+    400022: Claw(2)
+    400024: Claw(3)
+    400026: Claw(4)
+    400028: Claw(5)
+    400030: Claw(6)
+    400032: Claw(7)
+    400034: Claw(8)
+    400036: FacialBone
+    400038: gant
+    400040: Group15716
+    400042: Group15716 1
+    400044: Group15716 10
+    400046: Group15716 11
+    400048: Group15716 12
+    400050: Group15716 13
+    400052: Group15716 14
+    400054: Group15716 15
+    400056: Group15716 16
+    400058: Group15716 17
+    400060: Group15716 18
+    400062: Group15716 19
+    400064: Group15716 2
+    400066: Group15716 3
+    400068: Group15716 4
+    400070: Group15716 5
+    400072: Group15716 6
+    400074: Group15716 7
+    400076: Group15716 8
+    400078: Group15716 9
+    400080: Group15732
+    400082: Group15732 1
+    400084: Group15732 10
+    400086: Group15732 11
+    400088: Group15732 12
+    400090: Group15732 13
+    400092: Group15732 14
+    400094: Group15732 15
+    400096: Group15732 16
+    400098: Group15732 17
+    400100: Group15732 18
+    400102: Group15732 19
+    400104: Group15732 2
+    400106: Group15732 3
+    400108: Group15732 4
+    400110: Group15732 5
+    400112: Group15732 6
+    400114: Group15732 7
+    400116: Group15732 8
+    400118: Group15732 9
+    400120: Group17261
+    400122: Group17261 1
+    400124: Group17261 10
+    400126: Group17261 11
+    400128: Group17261 12
+    400130: Group17261 13
+    400132: Group17261 14
+    400134: Group17261 15
+    400136: Group17261 16
+    400138: Group17261 17
+    400140: Group17261 18
+    400142: Group17261 19
+    400144: Group17261 2
+    400146: Group17261 3
+    400148: Group17261 4
+    400150: Group17261 5
+    400152: Group17261 6
+    400154: Group17261 7
+    400156: Group17261 8
+    400158: Group17261 9
+    400160: Group36891
+    400162: Group36891 1
+    400164: Group36891 10
+    400166: Group36891 11
+    400168: Group36891 12
+    400170: Group36891 13
+    400172: Group36891 14
+    400174: Group36891 15
+    400176: Group36891 16
+    400178: Group36891 17
+    400180: Group36891 18
+    400182: Group36891 19
+    400184: Group36891 2
+    400186: Group36891 3
+    400188: Group36891 4
+    400190: Group36891 5
+    400192: Group36891 6
+    400194: Group36891 7
+    400196: Group36891 8
+    400198: Group36891 9
+    400200: Group42355
+    400202: Group42355 1
+    400204: Group42355 10
+    400206: Group42355 11
+    400208: Group42355 12
+    400210: Group42355 13
+    400212: Group42355 14
+    400214: Group42355 15
+    400216: Group42355 16
+    400218: Group42355 17
+    400220: Group42355 18
+    400222: Group42355 19
+    400224: Group42355 2
+    400226: Group42355 3
+    400228: Group42355 4
+    400230: Group42355 5
+    400232: Group42355 6
+    400234: Group42355 7
+    400236: Group42355 8
+    400238: Group42355 9
+    400240: Group43081
+    400242: Group43081 1
+    400244: Group51270
+    400246: Group51270 1
+    400248: Group51270 10
+    400250: Group51270 11
+    400252: Group51270 12
+    400254: Group51270 13
+    400256: Group51270 14
+    400258: Group51270 15
+    400260: Group51270 16
+    400262: Group51270 17
+    400264: Group51270 18
+    400266: Group51270 19
+    400268: Group51270 2
+    400270: Group51270 3
+    400272: Group51270 4
+    400274: Group51270 5
+    400276: Group51270 6
+    400278: Group51270 7
+    400280: Group51270 8
+    400282: Group51270 9
+    400284: Group65238
+    400286: Group65238 1
+    400288: Group65238 10
+    400290: Group65238 11
+    400292: Group65238 12
+    400294: Group65238 13
+    400296: Group65238 14
+    400298: Group65238 15
+    400300: Group65238 16
+    400302: Group65238 17
+    400304: Group65238 18
+    400306: Group65238 19
+    400308: Group65238 2
+    400310: Group65238 3
+    400312: Group65238 4
+    400314: Group65238 5
+    400316: Group65238 6
+    400318: Group65238 7
+    400320: Group65238 8
+    400322: Group65238 9
+    400324: Group6974
+    400326: Group6974 1
+    400328: Group6974 10
+    400330: Group6974 11
+    400332: Group6974 12
+    400334: Group6974 13
+    400336: Group6974 14
+    400338: Group6974 15
+    400340: Group6974 16
+    400342: Group6974 17
+    400344: Group6974 18
+    400346: Group6974 19
+    400348: Group6974 2
+    400350: Group6974 3
+    400352: Group6974 4
+    400354: Group6974 5
+    400356: Group6974 6
+    400358: Group6974 7
+    400360: Group6974 8
+    400362: Group6974 9
+    400364: Head
+    400366: HeadNub
+    400368: Hip
+    400370: JawRoot
+    400372: L_Abdominal
+    400374: L_AbdominalNub
+    400376: L_Breast
+    400378: L_BreastNub
+    400380: L_Calf
+    400382: L_CalfTwist01
+    400384: L_CalfTwist02
+    400386: L_Clavicle
+    400388: L_Elbow
+    400390: L_Eye
+    400392: L_EyeRoot
+    400394: L_Finger00
+    400396: L_Finger01
+    400398: L_Finger02
+    400400: L_Finger0Nub
+    400402: L_Finger10
+    400404: L_Finger11
+    400406: L_Finger12
+    400408: L_Finger1Nub
+    400410: L_Finger20
+    400412: L_Finger21
+    400414: L_Finger22
+    400416: L_Finger2Nub
+    400418: L_Finger30
+    400420: L_Finger31
+    400422: L_Finger32
+    400424: L_Finger3Nub
+    400426: L_Finger40
+    400428: L_Finger41
+    400430: L_Finger42
+    400432: L_Finger4Nub
+    400434: L_Foot
+    400436: L_Forearm
+    400438: L_ForearmTwist01
+    400440: L_ForearmTwist02
+    400442: L_Hand
+    400444: L_Hip0
+    400446: L_Hip0Nub
+    400448: L_Knee
+    400450: L_Ribs
+    400452: L_RibsNub
+    400454: L_RibsTwist
+    400456: L_Thigh
+    400458: L_ThighTwist01
+    400460: L_ThighTwist02
+    400462: L_Toe00
+    400464: L_Toe00Nub
+    400466: L_Toe10
+    400468: L_Toe10Nub
+    400470: L_Toe20
+    400472: L_Toe20Nub
+    400474: L_Toe30
+    400476: L_Toe30Nub
+    400478: L_Toe40
+    400480: L_Toe40Nub
+    400482: L_ToeBase
+    400484: L_ToeBaseShareBone
+    400486: L_Upperarm
+    400488: L_UpperarmTwist01
+    400490: L_UpperarmTwist02
+    400492: Mask
+    400494: NeckTwist01
+    400496: NeckTwist02
+    400498: Pelvis
+    400500: Pivot
+    400502: Pivot 1
+    400504: Pivot 2
+    400506: Pivot 3
+    400508: Pivot 4
+    400510: Pivot 5
+    400512: Pivot 6
+    400514: Pivot 7
+    400516: Pivot 8
+    400518: Pivot 9
+    400520: R_Abdominal
+    400522: R_AbdominalNub
+    400524: R_Breast
+    400526: R_BreastNub
+    400528: R_Calf
+    400530: R_CalfTwist01
+    400532: R_CalfTwist02
+    400534: R_Clavicle
+    400536: R_Elbow
+    400538: R_Eye
+    400540: R_EyeRoot
+    400542: R_Finger00
+    400544: R_Finger01
+    400546: R_Finger02
+    400548: R_Finger0Nub
+    400550: R_Finger10
+    400552: R_Finger11
+    400554: R_Finger12
+    400556: R_Finger1Nub
+    400558: R_Finger20
+    400560: R_Finger21
+    400562: R_Finger22
+    400564: R_Finger2Nub
+    400566: R_Finger30
+    400568: R_Finger31
+    400570: R_Finger32
+    400572: R_Finger3Nub
+    400574: R_Finger40
+    400576: R_Finger41
+    400578: R_Finger42
+    400580: R_Finger4Nub
+    400582: R_Foot
+    400584: R_Forearm
+    400586: R_ForearmTwist01
+    400588: R_ForearmTwist02
+    400590: R_Hand
+    400592: R_Hip0
+    400594: R_Hip0Nub
+    400596: R_Knee
+    400598: R_Ribs
+    400600: R_RibsNub
+    400602: R_RibsTwist
+    400604: R_Thigh
+    400606: R_ThighTwist01
+    400608: R_ThighTwist02
+    400610: R_Toe00
+    400612: R_Toe00Nub
+    400614: R_Toe10
+    400616: R_Toe10Nub
+    400618: R_Toe20
+    400620: R_Toe20Nub
+    400622: R_Toe30
+    400624: R_Toe30Nub
+    400626: R_Toe40
+    400628: R_Toe40Nub
+    400630: R_ToeBase
+    400632: R_ToeBaseShareBone
+    400634: R_Upperarm
+    400636: R_UpperarmTwist01
+    400638: R_UpperarmTwist02
+    400640: Spine01
+    400642: Spine02
+    400644: Teeth01
+    400646: Teeth02
+    400648: Tongue01
+    400650: Tongue02
+    400652: Tongue03
+    400654: Tongue03Nub
+    400656: UpperJaw
+    400658: Waist
+    2100000: Bodysuit1
+    2100002: Tongue
+    2100004: Skin_Body
+    2100006: Skin_Head
+    2100008: Eyelash
+    2100010: Fingernail
+    2100012: Toenail
+    2100014: Upper_Teeth
+    2100016: Lower_Teeth
+    2100018: Mask1
+    2100020: Eye
+    2100022: Cornea
+    2100024: default
+    2100026: defaultMat
+    4300000: Bodysuit
+    4300002: CC_Base_Tongue
+    4300004: CC_Base_Body
+    4300006: CC_Base_Teeth
+    4300008: Mask
+    4300010: CC_Base_Eye
+    4300012: gant
+    4300014: Group17261
+    4300016: Group15716
+    4300018: Group15732
+    4300020: Group36891
+    4300022: Group65238
+    4300024: Group42355
+    4300026: Group51270
+    4300028: Group6974
+    4300030: Group17261
+    4300032: Group15716
+    4300034: Group15732
+    4300036: Group36891
+    4300038: Group65238
+    4300040: Group42355
+    4300042: Group51270
+    4300044: Group6974
+    4300046: Group17261
+    4300048: Group15716
+    4300050: Group15732
+    4300052: Group36891
+    4300054: Group65238
+    4300056: Group42355
+    4300058: Group51270
+    4300060: Group6974
+    4300062: Group17261
+    4300064: Group15716
+    4300066: Group15732
+    4300068: Group36891
+    4300070: Group65238
+    4300072: Group42355
+    4300074: Group51270
+    4300076: Group6974
+    4300078: Group17261
+    4300080: Group15716
+    4300082: Group15732
+    4300084: Group36891
+    4300086: Group65238
+    4300088: Group42355
+    4300090: Group51270
+    4300092: Group6974
+    4300094: Group17261
+    4300096: Group15716
+    4300098: Group15732
+    4300100: Group36891
+    4300102: Group65238
+    4300104: Group42355
+    4300106: Group51270
+    4300108: Group6974
+    4300110: Group17261
+    4300112: Group15716
+    4300114: Group15732
+    4300116: Group36891
+    4300118: Group65238
+    4300120: Group42355
+    4300122: Group51270
+    4300124: Group6974
+    4300126: Group17261
+    4300128: Group15716
+    4300130: Group15732
+    4300132: Group36891
+    4300134: Group65238
+    4300136: Group42355
+    4300138: Group51270
+    4300140: Group6974
+    4300142: Group17261
+    4300144: Group15716
+    4300146: Group15732
+    4300148: Group36891
+    4300150: Group65238
+    4300152: Group42355
+    4300154: Group51270
+    4300156: Group6974
+    4300158: Group17261
+    4300160: Group15716
+    4300162: Group15732
+    4300164: Group36891
+    4300166: Group65238
+    4300168: Group42355
+    4300170: Group51270
+    4300172: Group6974
+    4300174: Group43081
+    7400000: Black Kat(0)_TempMotion
+    9500000: //RootNode
+    13700000: Bodysuit
+    13700002: CC_Base_Body
+    13700004: CC_Base_Eye
+    13700006: CC_Base_Teeth
+    13700008: CC_Base_Tongue
+    13700010: gant
+    13700012: Group15716
+    13700014: Group15716 1
+    13700016: Group15716 2
+    13700018: Group15716 3
+    13700020: Group15716 4
+    13700022: Group15716 5
+    13700024: Group15716 6
+    13700026: Group15716 7
+    13700028: Group15716 8
+    13700030: Group15716 9
+    13700032: Group15732
+    13700034: Group15732 1
+    13700036: Group15732 2
+    13700038: Group15732 3
+    13700040: Group15732 4
+    13700042: Group15732 5
+    13700044: Group15732 6
+    13700046: Group15732 7
+    13700048: Group15732 8
+    13700050: Group15732 9
+    13700052: Group17261
+    13700054: Group17261 1
+    13700056: Group17261 2
+    13700058: Group17261 3
+    13700060: Group17261 4
+    13700062: Group17261 5
+    13700064: Group17261 6
+    13700066: Group17261 7
+    13700068: Group17261 8
+    13700070: Group17261 9
+    13700072: Group36891
+    13700074: Group36891 1
+    13700076: Group36891 2
+    13700078: Group36891 3
+    13700080: Group36891 4
+    13700082: Group36891 5
+    13700084: Group36891 6
+    13700086: Group36891 7
+    13700088: Group36891 8
+    13700090: Group36891 9
+    13700092: Group42355
+    13700094: Group42355 1
+    13700096: Group42355 2
+    13700098: Group42355 3
+    13700100: Group42355 4
+    13700102: Group42355 5
+    13700104: Group42355 6
+    13700106: Group42355 7
+    13700108: Group42355 8
+    13700110: Group42355 9
+    13700112: Group43081
+    13700114: Group51270
+    13700116: Group51270 1
+    13700118: Group51270 2
+    13700120: Group51270 3
+    13700122: Group51270 4
+    13700124: Group51270 5
+    13700126: Group51270 6
+    13700128: Group51270 7
+    13700130: Group51270 8
+    13700132: Group51270 9
+    13700134: Group65238
+    13700136: Group65238 1
+    13700138: Group65238 2
+    13700140: Group65238 3
+    13700142: Group65238 4
+    13700144: Group65238 5
+    13700146: Group65238 6
+    13700148: Group65238 7
+    13700150: Group65238 8
+    13700152: Group65238 9
+    13700154: Group6974
+    13700156: Group6974 1
+    13700158: Group6974 2
+    13700160: Group6974 3
+    13700162: Group6974 4
+    13700164: Group6974 5
+    13700166: Group6974 6
+    13700168: Group6974 7
+    13700170: Group6974 8
+    13700172: Group6974 9
+    13700174: Mask
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
