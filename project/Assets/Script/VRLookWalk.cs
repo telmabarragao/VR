@@ -26,11 +26,11 @@ public class VRLookWalk : MonoBehaviour
     {
         if (vrCamera.eulerAngles.x >= toggleAngle && vrCamera.eulerAngles.x < 90.0f)
         {
-            moveforward = true;
+            moveforward = false;
         }
         else
         {
-            moveforward = false;
+            moveforward = true;
         }
         if (moveforward == true)
         {
