@@ -10,9 +10,9 @@ public class VRStare_and_Grab : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
         stare_time = stare_time + Time.deltaTime;
