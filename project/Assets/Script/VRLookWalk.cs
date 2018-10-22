@@ -24,6 +24,10 @@ public class VRLookWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("x "+vrCamera.eulerAngles.x);
+        Debug.Log("y "+vrCamera.eulerAngles.y);
+        Debug.Log("z "+vrCamera.eulerAngles.z);
+
         if (vrCamera.eulerAngles.x >= toggleAngle && vrCamera.eulerAngles.x < 90.0f)
         {
             moveforward = false;
@@ -34,7 +38,7 @@ public class VRLookWalk : MonoBehaviour
         }
         if (moveforward == true)
         {
-            Vector3 forward = vrCamera.TransformDirection(Vector3.forward);
+            Vector3 forward = vrCamera.TransformDirection(new Vector3(Vector3.forward.x, 0f, Vector3.forward.z));
 
             cc.SimpleMove(forward * speed);
         }
