@@ -352,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &149067587
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10564,6 +10564,7 @@ MonoBehaviour:
   toggleAngle: 20
   speed: 5
   moveforward: 0
+  movebackward: 0
 --- !u!114 &1212542316
 MonoBehaviour:
   m_ObjectHideFlags: 0
