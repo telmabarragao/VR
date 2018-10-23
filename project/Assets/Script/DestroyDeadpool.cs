@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DestroyDeadpool : MonoBehaviour {
 
-    void OnTriggerEnter(Collider col){
-        if (col.gameObject.name == "Deadpool")
+    void OnCollisionEnter(Collision col){
+        if (col.gameObject.tag.Equals("DeadPool"))
         {
             Destroy(col.gameObject);
         }
