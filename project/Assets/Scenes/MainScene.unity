@@ -10491,6 +10491,7 @@ GameObject:
   - component: {fileID: 1212542313}
   - component: {fileID: 1212542312}
   - component: {fileID: 1212542315}
+  - component: {fileID: 1212542316}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10560,9 +10561,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrCamera: {fileID: 534669905}
-  toggleAngle: 30
-  speed: 3
+  toggleAngle: 20
+  speed: 5
   moveforward: 0
+--- !u!114 &1212542316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1212542311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16cc331556b8394ea96477e9fa7c2eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1302745825
 GameObject:
   m_ObjectHideFlags: 0
@@ -11345,6 +11357,7 @@ GameObject:
   - component: {fileID: 1614881645}
   - component: {fileID: 1614881647}
   - component: {fileID: 1614881646}
+  - component: {fileID: 1614881648}
   m_Layer: 0
   m_Name: deadpool_reference.001
   m_TagString: Untagged
@@ -11358,8 +11371,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: cda66b3394da4f94da9d991f59f7cbee, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614881644}
-  m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -9.4, z: -199.9}
+  m_LocalRotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -9.399998, z: -199.9}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 2106765241}
@@ -11409,6 +11422,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614881644}
   m_Mesh: {fileID: 4300000, guid: cda66b3394da4f94da9d991f59f7cbee, type: 3}
+--- !u!65 &1614881648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614881644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.46256673, y: 0.7151838, z: 0.16175407}
+  m_Center: {x: -0.000428766, y: 0.35502738, z: -0.02098005}
 --- !u!1 &1631070572
 GameObject:
   m_ObjectHideFlags: 0
@@ -15305,7 +15330,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1706716182
+  randomSeed: 1488280068
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18515,7 +18540,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1749580159}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 17.779999, y: -42.23, z: -43.899994}
+  m_LocalPosition: {x: 1, y: -42.23, z: -26.7}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 1302745826}
@@ -26293,6 +26318,17 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7637f61e7bf1f46078c2aa8dee44c04e, type: 3}
   m_PrefabInternal: {fileID: 301735530}
+--- !u!114 &1999940279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999940278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16cc331556b8394ea96477e9fa7c2eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1999940282
 MonoBehaviour:
   m_ObjectHideFlags: 0
