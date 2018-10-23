@@ -871,6 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16cc331556b8394ea96477e9fa7c2eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flame: {fileID: 0}
 --- !u!1 &317484901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1345,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1043682914
+  randomSeed: -1289632424
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6616,6 +6617,7 @@ GameObject:
   - component: {fileID: 973156795}
   - component: {fileID: 973156798}
   - component: {fileID: 973156797}
+  - component: {fileID: 973156796}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -6644,7 +6646,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 973156792}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.27, y: 2.67, z: 1.2}
@@ -6660,6 +6662,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16cc331556b8394ea96477e9fa7c2eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flame: {fileID: 1165193135345892, guid: d702c498ba9764bcbad7131066f7d362, type: 2}
+--- !u!54 &973156796
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 973156792}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &973156797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6731,7 +6749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stare_time: 0
   VRHand: {fileID: 308102208}
-  TargetObject: {fileID: 1999940282}
+  TargetObject: {fileID: 973156796}
 --- !u!1 &988943177
 GameObject:
   m_ObjectHideFlags: 0
@@ -6875,7 +6893,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2104560743
+  randomSeed: 402857254
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10684,7 +10702,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1212542311}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 362.7, y: 10.65, z: 251.5}
+  m_LocalPosition: {x: 362.7, y: 10.65, z: 342.1}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 1794132598}
@@ -10783,7 +10801,7 @@ GameObject:
   - component: {fileID: 1340615571}
   m_Layer: 0
   m_Name: Deadpool
-  m_TagString: Untagged
+  m_TagString: DeadPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11475,7 +11493,7 @@ GameObject:
   - component: {fileID: 1614881648}
   m_Layer: 0
   m_Name: deadpool_reference.001
-  m_TagString: Untagged
+  m_TagString: DeadPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11544,7 +11562,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614881644}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.46256673, y: 0.7151838, z: 0.16175407}
@@ -11857,7 +11875,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1213839055
+  randomSeed: -1714350318
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -15445,7 +15463,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1488280068
+  randomSeed: -1500340727
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18791,7 +18809,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -2035122486
+  randomSeed: -699269222
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -26437,17 +26455,6 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7637f61e7bf1f46078c2aa8dee44c04e, type: 3}
   m_PrefabInternal: {fileID: 301735530}
---- !u!114 &1999940279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1999940278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d16cc331556b8394ea96477e9fa7c2eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1999940282
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26707,7 +26714,7 @@ GameObject:
   - component: {fileID: 2106765241}
   m_Layer: 0
   m_Name: Deadpool
-  m_TagString: Untagged
+  m_TagString: DeadPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26869,7 +26876,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 599035235
+  randomSeed: -241514380
   InitialModule:
     serializedVersion: 3
     enabled: 1
