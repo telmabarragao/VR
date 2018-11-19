@@ -44,7 +44,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SamplesResources/Scenes/3-VuMark.unity
     guid: d9b53b25a285640cf8ac170a80603e34
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Quiz.unity
     guid: 200296d62196b4e7bbbf33b21adb2d96
+  - enabled: 1
+    path: Assets/Scenes/ChooseCategory.unity
+    guid: bb722f46a0feb4be6a730e9adce42d52
   m_configObjects: {}
