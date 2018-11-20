@@ -116,6 +116,9 @@ public class CheckAnswers : MonoBehaviour {
 
         GameObject goA = FindInActiveObjectByTag(ActiveTag[0] + "_" + ActiveTag[2] + "_" + nextQuestion);
         goA.SetActive(true);
+
+        Debug.Log(goA);
+
         GameObject goQ = FindInActiveObjectByTag("Q_" + ActiveTag[2] + "_" + nextQuestion);
         goQ.SetActive(true);
 

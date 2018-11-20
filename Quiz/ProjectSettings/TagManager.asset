@@ -8,6 +8,22 @@ TagManager:
   - Q_E_2
   - A_E_1
   - A_E_2
+  - Q_E_3
+  - Q_E_4
+  - Q_E_5
+  - Q_E_6
+  - Q_E_7
+  - Q_E_8
+  - Q_E_9
+  - Q_E_10
+  - A_E_3
+  - A_E_4
+  - A_E_5
+  - A_E_6
+  - A_E_7
+  - A_E_8
+  - A_E_9
+  - A_E_10
   layers:
   - Default
   - TransparentFX
