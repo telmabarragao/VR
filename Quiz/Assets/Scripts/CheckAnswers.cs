@@ -74,7 +74,7 @@ public class CheckAnswers : MonoBehaviour {
             GetComponent<UnityEngine.UI.Button>().colors = cb;
             gameObject.GetComponent<Image>().color = Color.green;
 
-            Invoke("GoToNext", 3);
+            Invoke("GoToNext", 2);
 
 
 
@@ -97,7 +97,7 @@ public class CheckAnswers : MonoBehaviour {
             GetComponent<UnityEngine.UI.Button>().colors = cb;
             gameObject.GetComponent<Image>().color = Color.red;
 
-            Invoke("GoToNext", 3);
+            Invoke("GoToNext", 2);
 
         }
 
