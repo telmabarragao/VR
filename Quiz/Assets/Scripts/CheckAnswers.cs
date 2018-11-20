@@ -15,10 +15,13 @@ public class CheckAnswers : MonoBehaviour {
 
     string audioNameNow;
 
+    ScoreName scoreName;
+
     // Use this for initialization
     void Start () {
 
         am = FindObjectOfType<AudioManager>();
+        scoreName = FindObjectOfType<ScoreName>();
 
     }
 	
@@ -61,6 +64,9 @@ public class CheckAnswers : MonoBehaviour {
         string toCompareBtn = btn.Split('_')[1];
 
         if(string.Compare(toCompareBtn, audioNameNow)==0){
+            Debug.Log("resposta certa");
+            scoreName.setScorePlayer(10);
+            Debug.Log(scoreName.GetPlayerScore());
 
             //Changes the button's Normal color to the new color.
             ColorBlock cb = gameObject.GetComponent<UnityEngine.UI.Button>().colors;
@@ -84,6 +90,9 @@ public class CheckAnswers : MonoBehaviour {
             Debug.Log("resposta erradah");
             //mudar cor
             //por disable
+
+            scoreName.setScorePlayer(-10);
+            Debug.Log(scoreName.GetPlayerScore());
 
             //Changes the button's Normal color to the new color.
             ColorBlock cb = gameObject.GetComponent<UnityEngine.UI.Button>().colors;
@@ -116,9 +125,7 @@ public class CheckAnswers : MonoBehaviour {
 
         GameObject goA = FindInActiveObjectByTag(ActiveTag[0] + "_" + ActiveTag[2] + "_" + nextQuestion);
         goA.SetActive(true);
-
-        Debug.Log(goA);
-
+        
         GameObject goQ = FindInActiveObjectByTag("Q_" + ActiveTag[2] + "_" + nextQuestion);
         goQ.SetActive(true);
 
