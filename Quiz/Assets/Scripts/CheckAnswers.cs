@@ -55,43 +55,28 @@ public class CheckAnswers : MonoBehaviour {
         checkIfMatch(nameClickedButton);
     }
 
+
     public void checkIfMatch(string btn)
     {
         string toCompareBtn = btn.Split('_')[1];
 
         if(string.Compare(toCompareBtn, audioNameNow)==0){
-            Debug.Log("resposta certa");
 
             //Changes the button's Normal color to the new color.
-            ColorBlock cb = GetComponent<UnityEngine.UI.Button>().colors;
+            ColorBlock cb = gameObject.GetComponent<UnityEngine.UI.Button>().colors;
+            Debug.Log(cb.normalColor);
             cb.normalColor = Color.green;
+            cb.pressedColor = Color.green;
+            cb.disabledColor = Color.green;
+            cb.highlightedColor = Color.green;
+
+            Debug.Log(cb.normalColor);
             GetComponent<UnityEngine.UI.Button>().colors = cb;
+            gameObject.GetComponent<Image>().color = Color.green;
 
-            //which question is active
-            GameObject parent = transform.parent.gameObject;
-            string ActiveTag = parent.tag;
-            string[] taggg = ActiveTag.Split('_');
-            int questNumber = int.Parse(ActiveTag.Split('_')[2]);
-
-            int nextQuestion = questNumber + 1;
+            Invoke("GoToNext", 3);
 
 
-            GameObject goA = FindInActiveObjectByTag(ActiveTag[0] + "_"+ ActiveTag[2] +"_"+nextQuestion);
-            Debug.Log(goA);
-            goA.SetActive(true);
-            GameObject goQ = FindInActiveObjectByTag("Q_" + ActiveTag[2] + "_" + nextQuestion);
-            Debug.Log(goQ);
-
-            goQ.SetActive(true);
-
-            //GameObject goOutQ = GameObject.FindWithTag("Q_" + ActiveTag[2] + "_" + questNumber);
-            //goOutQ.SetActive(false);
-            parent.SetActive(false);
-
-            int nextSong = am.GetIndMusicPlaying()+1;
-            am.Stop(audioNameNow);
-            Debug.Log(nextSong);
-            am.PlayInd(nextSong);
 
         }
         else
@@ -100,16 +85,49 @@ public class CheckAnswers : MonoBehaviour {
             //mudar cor
             //por disable
 
-
             //Changes the button's Normal color to the new color.
-            ColorBlock cb = GetComponent<UnityEngine.UI.Button>().colors;
+            ColorBlock cb = gameObject.GetComponent<UnityEngine.UI.Button>().colors;
+            Debug.Log(cb.normalColor);
             cb.normalColor = Color.red;
+            cb.pressedColor = Color.red;
+            cb.disabledColor = Color.red;
+            cb.highlightedColor = Color.red;
+
+            Debug.Log(cb.normalColor);
             GetComponent<UnityEngine.UI.Button>().colors = cb;
+            gameObject.GetComponent<Image>().color = Color.red;
+
+            Invoke("GoToNext", 3);
 
         }
 
     }
 
+
+    public void GoToNext(){
+        //which question is active
+        GameObject parent = transform.parent.gameObject;
+        string ActiveTag = parent.tag;
+        string[] taggg = ActiveTag.Split('_');
+        int questNumber = int.Parse(ActiveTag.Split('_')[2]);
+
+        int nextQuestion = questNumber + 1;
+
+
+        GameObject goA = FindInActiveObjectByTag(ActiveTag[0] + "_" + ActiveTag[2] + "_" + nextQuestion);
+        goA.SetActive(true);
+        GameObject goQ = FindInActiveObjectByTag("Q_" + ActiveTag[2] + "_" + nextQuestion);
+        goQ.SetActive(true);
+
+        GameObject goOutQ = GameObject.FindWithTag("Q_" + ActiveTag[2] + "_" + questNumber);
+        goOutQ.SetActive(false);
+        parent.SetActive(false);
+
+
+        int nextSong = am.GetIndMusicPlaying() + 1;
+        am.Stop(audioNameNow);
+        am.PlayInd(nextSong);
+    }
 
 
     GameObject FindInActiveObjectByTag(string tagg)
