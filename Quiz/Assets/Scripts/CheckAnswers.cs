@@ -118,23 +118,52 @@ public class CheckAnswers : MonoBehaviour {
         string[] taggg = ActiveTag.Split('_');
         int questNumber = int.Parse(ActiveTag.Split('_')[2]);
 
-        int nextQuestion = questNumber + 1;
+
+        if(questNumber == 9){
+
+            Debug.Log("e a ultima");
+            GameObject goOutQ = GameObject.FindWithTag("Q_" + ActiveTag[2] + "_" + questNumber);
+            goOutQ.SetActive(false);
+            parent.SetActive(false);
+
+            am.Stop(audioNameNow);
+
+            GameObject board = GameObject.Find("Board");
+            Debug.Log(board);
+            board.SetActive(false);
 
 
-        GameObject goA = FindInActiveObjectByTag(ActiveTag[0] + "_" + ActiveTag[2] + "_" + nextQuestion);
-        goA.SetActive(true);
-        
-        GameObject goQ = FindInActiveObjectByTag("Q_" + ActiveTag[2] + "_" + nextQuestion);
-        goQ.SetActive(true);
+            GameObject endScreen = FindInActiveObjectByTag("End_cat_entertai");
+            Debug.Log(endScreen);
 
-        GameObject goOutQ = GameObject.FindWithTag("Q_" + ActiveTag[2] + "_" + questNumber);
-        goOutQ.SetActive(false);
-        parent.SetActive(false);
+            endScreen.SetActive(true);
 
 
-        int nextSong = am.GetIndMusicPlaying() + 1;
-        am.Stop(audioNameNow);
-        am.PlayInd(nextSong);
+
+        }
+        else
+        {
+            int nextQuestion = questNumber + 1;
+
+
+            GameObject goA = FindInActiveObjectByTag(ActiveTag[0] + "_" + ActiveTag[2] + "_" + nextQuestion);
+            goA.SetActive(true);
+
+            GameObject goQ = FindInActiveObjectByTag("Q_" + ActiveTag[2] + "_" + nextQuestion);
+            goQ.SetActive(true);
+
+            GameObject goOutQ = GameObject.FindWithTag("Q_" + ActiveTag[2] + "_" + questNumber);
+            goOutQ.SetActive(false);
+            parent.SetActive(false);
+
+
+            int nextSong = am.GetIndMusicPlaying() + 1;
+            am.Stop(audioNameNow);
+            am.PlayInd(nextSong);
+
+        }
+
+
     }
 
 

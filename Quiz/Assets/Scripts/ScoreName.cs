@@ -45,4 +45,7 @@ public class NameScoreScript : MonoBehaviour
         playerName = name;
         Debug.Log(playerName);
     }
+
+
+   
 }
