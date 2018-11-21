@@ -9,6 +9,9 @@ public class AudioManager : MonoBehaviour {
 
     public Music[] musics;
 
+    public Music[] sounds;
+
+
     public static AudioManager instance;
 
 
@@ -32,6 +35,16 @@ public class AudioManager : MonoBehaviour {
             m.source.volume = m.volume;
             m.source.pitch = m.pitch;
         }
+
+        foreach (Music s in sounds)
+        {
+
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+        }
     }
 
 
@@ -43,6 +56,26 @@ public class AudioManager : MonoBehaviour {
                 s.source.Play();
             }
         }
+
+
+        //Sound musicc = Array.Find(musics, m => m.name == namee);
+        //Debug.Log(musicc.source);
+        //musicc.source.Play();
+    }
+
+
+    //Used to play single sound clips.
+    public void PlaySound(string namee)
+    {
+        foreach (Music s in sounds)
+        {
+            if (String.Equals(s.name, namee))
+            {
+                s.source.Play();
+            }
+        }
+
+
         //Sound musicc = Array.Find(musics, m => m.name == namee);
         //Debug.Log(musicc.source);
         //musicc.source.Play();
@@ -61,10 +94,28 @@ public class AudioManager : MonoBehaviour {
     }
 
 
+
+
     //Used to play single sound clips.
     public void Stop(string namee)
     {
         foreach (Music s in musics)
+        {
+            if (String.Equals(s.name, namee))
+            {
+                s.source.Stop();
+            }
+        }
+        //Sound musicc = Array.Find(musics, m => m.name == namee);
+        //Debug.Log(musicc.source);
+        //musicc.source.Play();
+    }
+
+
+    //Used to play single sound clips.
+    public void StopSound(string namee)
+    {
+        foreach (Music s in sounds)
         {
             if (String.Equals(s.name, namee))
             {

@@ -66,17 +66,17 @@ public class CheckAnswers : MonoBehaviour {
         if(string.Compare(toCompareBtn, audioNameNow)==0){
             Debug.Log("resposta certa");
             scoreName.setScorePlayer(10);
-            Debug.Log(scoreName.GetPlayerScore());
+
+
+            am.PlaySound("right");
 
             //Changes the button's Normal color to the new color.
             ColorBlock cb = gameObject.GetComponent<UnityEngine.UI.Button>().colors;
-            Debug.Log(cb.normalColor);
             cb.normalColor = Color.green;
             cb.pressedColor = Color.green;
             cb.disabledColor = Color.green;
             cb.highlightedColor = Color.green;
 
-            Debug.Log(cb.normalColor);
             GetComponent<UnityEngine.UI.Button>().colors = cb;
             gameObject.GetComponent<Image>().color = Color.green;
 
@@ -88,21 +88,19 @@ public class CheckAnswers : MonoBehaviour {
         else
         {
             Debug.Log("resposta erradah");
-            //mudar cor
-            //por disable
+        
 
             scoreName.setScorePlayer(-10);
-            Debug.Log(scoreName.GetPlayerScore());
+
+            am.PlaySound("wrong");
 
             //Changes the button's Normal color to the new color.
             ColorBlock cb = gameObject.GetComponent<UnityEngine.UI.Button>().colors;
-            Debug.Log(cb.normalColor);
             cb.normalColor = Color.red;
             cb.pressedColor = Color.red;
             cb.disabledColor = Color.red;
             cb.highlightedColor = Color.red;
 
-            Debug.Log(cb.normalColor);
             GetComponent<UnityEngine.UI.Button>().colors = cb;
             gameObject.GetComponent<Image>().color = Color.red;
 
