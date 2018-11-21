@@ -119,7 +119,7 @@ public class CheckAnswers : MonoBehaviour {
         int questNumber = int.Parse(ActiveTag.Split('_')[2]);
 
 
-        if(questNumber == 9){
+        if(questNumber == 10){
 
             Debug.Log("e a ultima");
             GameObject goOutQ = GameObject.FindWithTag("Q_" + ActiveTag[2] + "_" + questNumber);
