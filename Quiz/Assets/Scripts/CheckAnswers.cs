@@ -48,7 +48,6 @@ public class CheckAnswers : MonoBehaviour {
 
     public void OnClicked()
     {
-        Debug.Log("entrei no onclick");
         pressedButton = gameObject;
         nameClickedButton = pressedButton.name;
 
@@ -90,7 +89,7 @@ public class CheckAnswers : MonoBehaviour {
             Debug.Log("resposta erradah");
         
 
-            scoreName.setScorePlayer(-10);
+            scoreName.setScorePlayer(-5);
 
             am.PlaySound("wrong");
 

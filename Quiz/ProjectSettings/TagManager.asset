@@ -25,6 +25,9 @@ TagManager:
   - A_E_9
   - A_E_10
   - End_cat_entertai
+  - entertainment_ground
+  - playButtonEntert
+  - planeFinder_entert
   layers:
   - Default
   - TransparentFX

@@ -42,7 +42,7 @@ public class finishCategoryScript : MonoBehaviour {
     public void CloseCategory()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("Menu");
     }
 
    
