@@ -5,23 +5,24 @@ using Vuforia;
 
 public class startAnatomButton : MonoBehaviour, IVirtualButtonEventHandler {
 
-
     public GameObject anatomyBtnObject;
-    //public Animator btnAnim;
+    public GameObject Anatomy;
+    //public GameObject EntertainmentImageTarget;
 
 	void Start () {
         anatomyBtnObject = GameObject.Find("StartQuizButton");
         anatomyBtnObject.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
-        //btnAnim.GetComponent<Animator>();
 		
 	}
 	
     public void OnButtonPressed(VirtualButtonBehaviour vb) {
-        //setCategory(nameClickedButton);
         Debug.Log("button pressed");
     }
 
     public void OnButtonReleased(VirtualButtonBehaviour vb) {
+        Anatomy.SetActive(true);
+        //EntertainmentImageTarget.SetActive(false);
+        //enquanto esta estiver activa, fazer disable ao image target
         Debug.Log("button released");
     }
 
