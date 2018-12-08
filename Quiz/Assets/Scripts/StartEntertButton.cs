@@ -5,14 +5,15 @@ using Vuforia;
 
 public class StartEntertButton : MonoBehaviour, IVirtualButtonEventHandler {
 
-    public GameObject entertBtnObject;
+    private GameObject entertBtnObject;
     public GameObject Entertainment;
     public GameObject AnatomyImageTarget;
     public GameObject EntertainmentImageTarget;
     public GameObject CategorySelectionText;
 
 
-    void Start() {
+    void Start () {
+        entertBtnObject = GameObject.Find("StartEntertainmentButton");
         entertBtnObject.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
 
     }
@@ -34,8 +35,9 @@ public class StartEntertButton : MonoBehaviour, IVirtualButtonEventHandler {
         Debug.Log("button released");
     }
 
+
     // Update is called once per frame
-    void Update() {
+    void Update () {
 
     }
 

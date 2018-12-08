@@ -3960,7 +3960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1836146739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3972,7 +3972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41c215e61f3fa64f8749d6821ec0b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entertBtnObject: {fileID: 1903948896}
   Entertainment: {fileID: 1407027853}
   AnatomyImageTarget: {fileID: 1940650132}
   EntertainmentImageTarget: {fileID: 1836146738}
@@ -4330,7 +4329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1940650133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4342,7 +4341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ae07e76bfd8214f895be45f181ca05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anatomyBtnObject: {fileID: 1899598004}
   Anatomy: {fileID: 823289188}
   EntertainmentImageTarget: {fileID: 1836146738}
   AnatomyImageTarget: {fileID: 1940650132}

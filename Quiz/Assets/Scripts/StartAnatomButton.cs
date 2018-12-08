@@ -5,7 +5,7 @@ using Vuforia;
 
 public class StartAnatomButton : MonoBehaviour, IVirtualButtonEventHandler {
 
-    public GameObject anatomyBtnObject;
+    private GameObject anatomyBtnObject;
     public GameObject Anatomy;
     public GameObject EntertainmentImageTarget;
     public GameObject AnatomyImageTarget;
@@ -13,6 +13,7 @@ public class StartAnatomButton : MonoBehaviour, IVirtualButtonEventHandler {
 
 
     void Start () {
+        anatomyBtnObject = GameObject.Find("StartAnatomyButton");
         anatomyBtnObject.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
 
 	}
