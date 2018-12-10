@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Vuforia;
 
 
 public class finishCategoryScript : MonoBehaviour {
@@ -11,22 +12,12 @@ public class finishCategoryScript : MonoBehaviour {
     public TextMeshProUGUI nametitleObjectFinal;
     public TextMeshProUGUI scoretitleObjectFinal;
 
-    private void Start()
-    {
-        sn = FindObjectOfType<ScoreName>();
+    public GameObject EndGameUI;
+    public GameObject CategorySelectionText;
+    public GameObject AnatomyImageTarget;
+    public GameObject EntertainmentImageTarget;
 
-        string playerName = sn.GetPlayerName();
-        float playerScore = sn.GetPlayerScore();
-
-        nametitleObjectFinal.text = "Player : " + playerName;
-        scoretitleObjectFinal.text = "Final Score : " + playerScore;
-
-
-
-    }
-
-    private void Awake()
-    {
+    private void Start() {
         sn = FindObjectOfType<ScoreName>();
 
         string playerName = sn.GetPlayerName();
@@ -38,12 +29,35 @@ public class finishCategoryScript : MonoBehaviour {
 
     }
 
+    private void Awake() {
+        sn = FindObjectOfType<ScoreName>();
 
-    public void CloseCategory()
-    {
+        string playerName = sn.GetPlayerName();
+        float playerScore = sn.GetPlayerScore();
+
+        nametitleObjectFinal.text = "Player : " + playerName;
+        scoretitleObjectFinal.text = "Final Score : " + playerScore;
+
+
+    }
+
+
+    public void CloseCategory() {
 
         SceneManager.LoadScene("Menu");
     }
 
-   
+
+    public void Restart() {
+        sn.setScorePlayer(0);                                                        //reset da pontuacao
+
+        EndGameUI.SetActive(false);                                                  //desliga endGameUI
+        CategorySelectionText.SetActive(true);                                       //liga o texto de selecao de categoria
+        AnatomyImageTarget.SetActive(true);                                          //volta a activar os objects de image target
+        AnatomyImageTarget.GetComponent<ImageTargetBehaviour>().enabled = true;      //e as respectivas funcionalidades
+        EntertainmentImageTarget.SetActive(true);                                    //same para o do entertainment
+        EntertainmentImageTarget.GetComponent<ImageTargetBehaviour>().enabled = true;//basicamente é voltar ao inicio sem ter q por o nome outra vez
+    }
+
+
 }
