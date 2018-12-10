@@ -8,13 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3511e9a1770c6b346ac9dfdbb96b7267
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/anatomy_test.unity
     guid: 91a6efc4027dcf941ae0064fd05f39fa
   - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 06b9a3ee687315243ba5bf7bedc62e22
   - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
     path: Assets/Scenes/Game_v2.unity
-    guid: bf9a0d961be0442aea6977162fedf27a
+    guid: 22c34f42950a14d64a7cc42275a6c0c9
   m_configObjects: {}
