@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RotateZoomTest.unity
+    guid: 32688bad07d12a54194df46140eef1ee
   m_configObjects: {}
