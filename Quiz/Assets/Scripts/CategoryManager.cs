@@ -44,28 +44,27 @@ public class CategoryManager : MonoBehaviour {
 
             if (category.Equals("entertainment"))
             {
+                planeFinderEntert.SetActive(true);
                 Debug.Log(objectToShowEntert.name);
 
                 objectToShowEntert.SetActive(true);
 
                 Debug.Log(planeFinderEntert.name);
 
-                planeFinderEntert.SetActive(true);
+              
 
                 Debug.Log(imageTargetEntert.name);
-                
+
                 if (objectToShowEntert.activeSelf)
                 {
 
                     Debug.Log("TOU ATIVO");
-                    imageTargetEntert.SetActive(false); 
+                    imageTargetEntert.SetActive(false);
                 }
                 else
                 {
                     Debug.Log("TOU INATIVO!!!");
                 }
-
-
             }
         }
 
