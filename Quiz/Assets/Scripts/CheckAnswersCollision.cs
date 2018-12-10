@@ -120,7 +120,7 @@ public class CheckAnswersCollision : MonoBehaviour {
             am.PlaySound("wrong");
 
             //Changes the button's Normal color to the new color.
-            pressedButton.GetComponent<Renderer>().material = rightMate;
+            pressedButton.GetComponent<Renderer>().material = wrongMate;
 
             Invoke("GoToNext", 2);
 
