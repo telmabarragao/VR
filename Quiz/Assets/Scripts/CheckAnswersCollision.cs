@@ -8,6 +8,8 @@ using System.Collections.Generic;
 public class CheckAnswersCollision : MonoBehaviour {
 
     AudioManager am;
+
+    public GameObject canvasTimer;
     
     GameObject pressedButton;
     
@@ -178,6 +180,9 @@ public class CheckAnswersCollision : MonoBehaviour {
             int nextSong = am.GetIndMusicPlaying() + 1;
             am.Stop(audioNameNow);
             am.PlayInd(nextSong);
+
+
+            canvasTimer.
 
         }
 

@@ -10,7 +10,10 @@ public class CheckAnswersCollisionAnatomy : MonoBehaviour {
     AudioManager am;
     
     GameObject pressedButton;
-    
+
+    public GameObject canvasTimer;
+
+
     string nameClickedButton;
 
     string audioNameNow;
