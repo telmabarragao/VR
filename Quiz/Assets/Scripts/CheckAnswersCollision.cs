@@ -151,7 +151,7 @@ public class CheckAnswersCollision : MonoBehaviour {
             board.SetActive(false);
 
 
-            GameObject endScreen = FindInActiveObjectByTag("End_cat_entertai");
+            GameObject endScreen = FindInActiveObjectByTag("End_Category");
             Debug.Log(endScreen);
 
             endScreen.SetActive(true);

@@ -154,7 +154,7 @@ public class CheckAnswersCollisionAnatomy : MonoBehaviour {
             board.SetActive(false);
 
 
-            GameObject endScreen = FindInActiveObjectByTag("End_cat_anatomy");
+            GameObject endScreen = FindInActiveObjectByTag("End_Category");
             Debug.Log(endScreen);
 
             endScreen.SetActive(true);
