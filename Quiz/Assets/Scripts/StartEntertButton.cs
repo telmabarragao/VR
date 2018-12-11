@@ -21,6 +21,7 @@ public class StartEntertButton : MonoBehaviour, IVirtualButtonEventHandler {
 
     public void OnButtonPressed(VirtualButtonBehaviour vb) {  //esta funcao tem que estar aqui anyway, mesmo que nao faca nada.
         Debug.Log("button pressed");
+        Debug.Log("estamos no entertainment");
 
     }
 
@@ -37,12 +38,16 @@ public class StartEntertButton : MonoBehaviour, IVirtualButtonEventHandler {
 
         EntPlaneFinder.SetActive(true);
         Debug.Log("button released");
+        Debug.Log("estamos no entertainment");
+
+        Debug.Log(EntPlaneFinder);
+        Debug.Log(Entertainment);
+
     }
 
 
     // Update is called once per frame
     void Update () {
-
     }
 
 

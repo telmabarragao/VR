@@ -9,8 +9,10 @@ public class ScoreName : MonoBehaviour
 
     string playerName;
     float playerScore=0;
-    public TextMeshProUGUI nametitleObject;
-    public TextMeshProUGUI scoretitleObject;
+    public TextMeshProUGUI nametitleObjectEnt;
+    public TextMeshProUGUI scoretitleObjectEnt;
+    public TextMeshProUGUI nametitleObjectAna;
+    public TextMeshProUGUI scoretitleObjectAna;
 
 
 
@@ -57,7 +59,9 @@ public class ScoreName : MonoBehaviour
 
     public void DisplayName()
     {
-        nametitleObject.text = "Player : "+GetPlayerName();
+        nametitleObjectEnt.text = "Player : " + GetPlayerName();
+        nametitleObjectAna.text = "Player : " + GetPlayerName();
+
     }
 
 
@@ -76,6 +80,8 @@ public class ScoreName : MonoBehaviour
 
     public void DisplayScore()
     {
-        scoretitleObject.text = "Score : " + GetPlayerScore();
+        scoretitleObjectEnt.text = "Score : " + GetPlayerScore();
+        scoretitleObjectAna.text = "Score : " + GetPlayerScore();
+
     }
 }
