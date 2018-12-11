@@ -131,8 +131,9 @@ public class CheckAnswersCollision : MonoBehaviour {
 
     public void GoToNext(){
         //which question is active
-        GameObject parent = transform.parent.gameObject;
+        GameObject parent = transform.parent.parent.gameObject;
         string ActiveTag = parent.tag;
+        Debug.Log(parent);
         string[] taggg = ActiveTag.Split('_');
         int questNumber = int.Parse(ActiveTag.Split('_')[2]);
 
