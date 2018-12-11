@@ -39,6 +39,8 @@ TagManager:
   - A_A_4
   - A_A_5
   - End_Category
+  - timertxt
+  - textoftimer
   layers:
   - Default
   - TransparentFX

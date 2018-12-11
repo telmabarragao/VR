@@ -9,7 +9,7 @@ public class CheckAnswersCollision : MonoBehaviour {
 
     AudioManager am;
 
-    public GameObject canvasTimer;
+    public Text texto;
     
     GameObject pressedButton;
     
@@ -22,6 +22,8 @@ public class CheckAnswersCollision : MonoBehaviour {
     public Material wrongMate;
 
     public Material rightMate;
+    int nextSong;
+
 
     // Use this for initialization
     void Start () {
@@ -29,23 +31,29 @@ public class CheckAnswersCollision : MonoBehaviour {
         am = FindObjectOfType<AudioManager>();
         scoreName = FindObjectOfType<ScoreName>();
 
+
     }
 	
 
     void Update()
     {
+        
             if (am.isPlaying())
             {
                 //something is playing
                 audioNameNow = FindObjectOfType<AudioManager>().GetNameMusicPlaying();
 
-            }
+                nextSong = am.GetIndMusicPlaying() + 1;
+        }
             else
             {
 
                 //something is playing
-                audioNameNow = FindObjectOfType<AudioManager>().GetNameMusicPlaying();
+                //audioNameNow = FindObjectOfType<AudioManager>().GetNameMusicPlaying();
+                am.PlaySound("wrong");
+                scoreName.setScorePlayer(-5);
 
+                Invoke("GoToNext", 0);
                 //there is no audio playing
 
                 //audioSource.clip = otherClip;
@@ -54,11 +62,12 @@ public class CheckAnswersCollision : MonoBehaviour {
             }
 
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            ShootRay(ray);
-        }
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                ShootRay(ray);
+            }
+        
     }
 
     void ShootRay(Ray ray)
@@ -135,7 +144,7 @@ public class CheckAnswersCollision : MonoBehaviour {
         //which question is active
         GameObject parent = transform.parent.parent.gameObject;
         string ActiveTag = parent.tag;
-        Debug.Log(parent);
+    
         string[] taggg = ActiveTag.Split('_');
         int questNumber = int.Parse(ActiveTag.Split('_')[2]);
 
@@ -147,11 +156,16 @@ public class CheckAnswersCollision : MonoBehaviour {
             goOutQ.SetActive(false);
             parent.SetActive(false);
 
-            am.Stop(audioNameNow);
+            
+                am.Stop(audioNameNow);
 
-            GameObject board = GameObject.Find("Board");
+            
+
+            GameObject board = GameObject.Find("BoardEnt");
             Debug.Log(board);
             board.SetActive(false);
+
+            GameObject.FindGameObjectWithTag("timertxt").SetActive(false);
 
 
             GameObject endScreen = FindInActiveObjectByTag("End_Category");
@@ -177,13 +191,12 @@ public class CheckAnswersCollision : MonoBehaviour {
             goOutQ.SetActive(false);
             parent.SetActive(false);
 
-
-            int nextSong = am.GetIndMusicPlaying() + 1;
             am.Stop(audioNameNow);
             am.PlayInd(nextSong);
+            
+            
 
-
-            canvasTimer.
+           
 
         }
 
