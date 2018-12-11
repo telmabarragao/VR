@@ -8,7 +8,7 @@ using Vuforia;
 
 public class finishCategoryScript : MonoBehaviour {
 
-    ScoreName sn;
+    public ScoreName sn;
     public TextMeshProUGUI nametitleObjectFinal;
     public TextMeshProUGUI scoretitleObjectFinal;
 
@@ -18,7 +18,6 @@ public class finishCategoryScript : MonoBehaviour {
     public GameObject EntertainmentImageTarget;
 
     private void Start() {
-        sn = FindObjectOfType<ScoreName>();
 
         string playerName = sn.GetPlayerName();
         float playerScore = sn.GetPlayerScore();
@@ -30,7 +29,6 @@ public class finishCategoryScript : MonoBehaviour {
     }
 
     private void Awake() {
-        sn = FindObjectOfType<ScoreName>();
 
         string playerName = sn.GetPlayerName();
         float playerScore = sn.GetPlayerScore();

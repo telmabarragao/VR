@@ -11,8 +11,6 @@ public class ScoreName : MonoBehaviour
     float playerScore=0;
     public TextMeshProUGUI nametitleObjectEnt;
     public TextMeshProUGUI scoretitleObjectEnt;
-    public TextMeshProUGUI nametitleObjectAna;
-    public TextMeshProUGUI scoretitleObjectAna;
 
 
 
