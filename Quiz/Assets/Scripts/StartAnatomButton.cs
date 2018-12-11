@@ -9,6 +9,8 @@ public class StartAnatomButton : MonoBehaviour, IVirtualButtonEventHandler {
     public GameObject Anatomy;
     public GameObject EntertainmentImageTarget;
     public GameObject AnatomyImageTarget;
+    public GameObject EntPlaneFinder;
+    public GameObject AnaPlaneFinder;
     public GameObject CategorySelectionText;
 
 
@@ -23,7 +25,8 @@ public class StartAnatomButton : MonoBehaviour, IVirtualButtonEventHandler {
     }
 
     public void OnButtonReleased(VirtualButtonBehaviour vb) {  //same com esta
-
+        EntPlaneFinder.SetActive(false);
+        AnaPlaneFinder.SetActive(true);
         CategorySelectionText.SetActive(false);         //retira o texto para escolher categoria
         Anatomy.SetActive(true);                        //activa o game object para o board da categoria
 

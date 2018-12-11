@@ -11,6 +11,7 @@ public class StartEntertButton : MonoBehaviour, IVirtualButtonEventHandler {
     public GameObject EntertainmentImageTarget;
     public GameObject CategorySelectionText;
     public GameObject EntPlaneFinder;
+    public GameObject AnaPlaneFinder;
 
     void Start () {
         entertBtnObject = GameObject.Find("StartEntertainmentButton");
@@ -24,7 +25,9 @@ public class StartEntertButton : MonoBehaviour, IVirtualButtonEventHandler {
     }
 
     public void OnButtonReleased(VirtualButtonBehaviour vb) { //same com esta
-        
+
+        EntPlaneFinder.SetActive(true);
+        AnaPlaneFinder.SetActive(false);
         CategorySelectionText.SetActive(false);      //retira o texto para escolher categoria
         Entertainment.SetActive(true);               //activa o game object para o board da categoria
         AnatomyImageTarget.GetComponent<ImageTargetBehaviour>().enabled = false;           //faz disable a deteccao de image targets
