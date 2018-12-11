@@ -51,12 +51,13 @@ public class finishCategoryScript : MonoBehaviour {
     public void Restart() {
         sn.setScorePlayer(0);                                                        //reset da pontuacao
 
-        EndGameUI.SetActive(false);                                                  //desliga endGameUI
         CategorySelectionText.SetActive(true);                                       //liga o texto de selecao de categoria
         AnatomyImageTarget.SetActive(true);                                          //volta a activar os objects de image target
         AnatomyImageTarget.GetComponent<ImageTargetBehaviour>().enabled = true;      //e as respectivas funcionalidades
         EntertainmentImageTarget.SetActive(true);                                    //same para o do entertainment
         EntertainmentImageTarget.GetComponent<ImageTargetBehaviour>().enabled = true;//basicamente é voltar ao inicio sem ter q por o nome outra vez
+        EndGameUI.SetActive(false);                                                  //desliga endGameUI
+
     }
 
 
