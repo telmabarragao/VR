@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour {
     
 	public void PlayGame () {
 
-        SceneManager.LoadScene("anatomy_test_bt");
+        SceneManager.LoadScene("Game_v3");
 
     }
 

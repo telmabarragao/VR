@@ -165,7 +165,7 @@ public class CheckAnswersCollision : MonoBehaviour {
             Debug.Log(board);
             board.SetActive(false);
 
-            GameObject.FindGameObjectWithTag("timertxt").SetActive(false);
+            //GameObject.FindGameObjectWithTag("timertxt").SetActive(false);
 
 
             GameObject endScreen = FindInActiveObjectByTag("End_Category");

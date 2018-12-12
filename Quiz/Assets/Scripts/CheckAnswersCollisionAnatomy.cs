@@ -105,7 +105,7 @@ public class CheckAnswersCollisionAnatomy : MonoBehaviour {
 
         if(string.Compare(rightName, btn)==0){
             Debug.Log("resposta certa");
-            //scoreName.setScorePlayer(10);
+            scoreName.setScorePlayer(10);
 
 
             am.PlaySound("right");

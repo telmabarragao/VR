@@ -8,7 +8,7 @@ using Vuforia;
 
 public class finishCategoryScript : MonoBehaviour {
 
-    public ScoreName sn;
+    private ScoreName sn;
     public TextMeshProUGUI nametitleObjectFinal;
     public TextMeshProUGUI scoretitleObjectFinal;
 
@@ -19,35 +19,45 @@ public class finishCategoryScript : MonoBehaviour {
 
     private void Start() {
 
+        Debug.Log("Start");
+
+        sn = FindObjectOfType<ScoreName>();
         string playerName = sn.GetPlayerName();
         float playerScore = sn.GetPlayerScore();
 
         nametitleObjectFinal.text = "Player : " + playerName;
         scoretitleObjectFinal.text = "Final Score : " + playerScore;
-
-
+  
     }
 
-    private void Awake() {
-
-        string playerName = sn.GetPlayerName();
+    private void Update()
+    {
+        sn = FindObjectOfType<ScoreName>();
         float playerScore = sn.GetPlayerScore();
-
-        nametitleObjectFinal.text = "Player : " + playerName;
         scoretitleObjectFinal.text = "Final Score : " + playerScore;
-
-
     }
+
+    //private void Awake() {
+    //    Debug.Log("Awake");
+
+    //    sn = FindObjectOfType<ScoreName>();
+    //    string playerName = sn.GetPlayerName();
+    //    float playerScore = sn.GetPlayerScore();
+
+    //    nametitleObjectFinal.text = "Player : " + playerName;
+    //    scoretitleObjectFinal.text = "Final Score : " + playerScore;
+
+    //}
 
 
     public void CloseCategory() {
 
-        SceneManager.LoadScene("Menu");
+        Application.Quit();
     }
 
 
     public void Restart() {
-        sn.setScorePlayer(0);                                                        //reset da pontuacao
+        sn.setScorePlayer(sn.GetPlayerScore());                                      //reset da pontuacao
 
         CategorySelectionText.SetActive(true);                                       //liga o texto de selecao de categoria
         AnatomyImageTarget.SetActive(true);                                          //volta a activar os objects de image target
